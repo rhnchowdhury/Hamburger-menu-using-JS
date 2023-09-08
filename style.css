@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: palevioletred;
+    color: whitesmoke;
+    padding: 1rem 1rem;
+    position: sticky;
+    padding: 2rem 1rem;
+
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+li {
+    display: inline-block;
+    margin-right: 2rem;
+    transition: all 0.4s;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+li:hover {
+    background-color: beige;
+    border-radius: 0.6rem;
+    padding: 6px;
+}
+
+.nav-menu {
+    font-size: 1.8rem;
+}
+
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        padding-left: 2.5rem;
+    }
+
+    li {
+        display: block;
+        margin-right: 0;
+        margin: 1rem 0;
+    }
+}
