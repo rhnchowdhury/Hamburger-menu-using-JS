@@ -39,6 +39,10 @@ li:hover {
     font-size: 1.8rem;
 }
 
+#menu-icon {
+    display: none;
+}
+
 @media (max-width:600px) {
     header {
         flex-direction: column;
@@ -56,5 +60,15 @@ li:hover {
         display: block;
         margin-right: 0;
         margin: 1rem 0;
+    }
+
+    #menu-icon {
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
     }
 }
